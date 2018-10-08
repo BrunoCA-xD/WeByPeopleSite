@@ -1,0 +1,340 @@
+/* Ajustes de layout */
+.navbar-brand-ccab {
+	padding-top: 6px !important;
+}
+
+.navbar-marginless {
+	margin-bottom: 0px !important;
+	box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-secondary-margin {
+	z-index: 1;
+	margin-top: 50px !important;
+	margin-bottom: 10px !important;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar-secondary-margin .navbar-form {
+	border: none;
+}
+
+.navbar-inverse {
+	background-color: #824949 !important;
+}
+
+.navbar-inverse input.form-control {
+	background-color: #ffffff !important;
+	border-color: #d6c9c9;
+	color: #000000 !important;
+}
+
+.breadcrumb-transparent {
+	margin-top: 8px;
+	margin-bottom: 0px;
+	background-color: transparent !important;
+}
+
+.breadcrumb-transparent a {
+	color: #8c8c8c !important;
+	font-weight: bold !important;
+}
+
+.breadcrumb-transparent li.active {
+	color: #e0e0e0 !important;
+}
+
+.breadcrumb>li+li:before {
+	content: "\00bb" !important;
+}
+
+div#page-wrapper {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+h1.page-header {
+	margin-top: 20px !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Login */
+.login-background {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color: #FFFFFF;
+}
+
+form[role=login] {
+	color: #5d5d5d;
+	/*background: #f2f2f2;*/
+	padding: 26px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+form[role=login] img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+form[role=login] input, form[role=login] button {
+	font-size: 18px;
+	margin: 16px 0;
+}
+
+form[role=login]>div {
+	text-align: center;
+}
+
+.form-links {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 50px;
+	margin-left: 9px; /*Ajustes em relação ao logo*/
+}
+
+.form-links a {
+	color: #337ab7;
+}
+
+/* Logotipos do login */
+.logos-login {
+	background: url('/images/logo_sprites.png') no-repeat;
+}
+
+.logo-iso27k { /* Logotipo do ISO27k, tamanho padrão */
+	background-position: -357px -11px;
+	width: 150px;
+	height: 150px;
+}
+
+@media ( min-width : 993px) {
+	/* Logotipo do ISO27k posição inferior direita em telas grandes */
+	.logo-iso27k {
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+	}
+}
+
+@media ( max-width : 992px) {
+	/* Logotipo do ISO27k posição superior direita, com tamanho reduzido, em telas pequenas */
+	.logo-iso27k {
+		position: fixed;
+		top: 15px;
+		right: 15px;
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media ( min-width : 1200px) {
+	/* Logotipo da CCAB com o tamanho normal em telas grandes */
+	.main-logo-login {
+		width: 302px !important;
+	}
+}
+
+@media ( min-width : 993px) {
+	/* Logotipo da CCAB com o tamanho reduzido em telas médias */
+	.main-logo-login {
+		width: 218px;
+	}
+}
+
+@media ( max-width : 992px) {
+	/* Logotipo da CCAB com o tamanho aumentado em telas pequenas */
+	.main-logo-login {
+		width: 350px;
+	}
+}
+
+.logo-isms27 {
+	background-position: 0 0;
+	width: 324px;
+	height: 206px;
+}
+
+img .logo-isms27 {
+	margin: auto;
+}
+
+img .logo-iso27k {
+	margin: auto;
+}
+
+div .logo-iso27k {
+	margin: auto;
+}
+
+/* Gráficos */
+.chart {
+	width: 100%;
+	min-width: 500px;
+	min-height: 450px;
+}
+
+.chart-dashboard-container {
+	display: block;
+}
+
+/* Erro em campos de seleção multipla */
+.has-error .ms-container .ms-selection .ms-list {
+	border-color: #f00 !important;
+	background-color: rgba(180, 0, 0, 0.1) !important;
+}
+
+/* Exclude Risk Profile Link  */
+button.link-togglable {
+	padding: 0px !important;
+	border: 0px !important;
+}
+
+/* Páginas de erro */
+body.background-error {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	display: table;
+	background-color: #21232a;
+	text-align: center;
+	text-shadow: 3px 5px 5px rgba(0, 0, 0, .8);
+}
+
+.background-error div {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 20px;
+}
+
+.background-error h1 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.background-error div p {
+	color: silver;
+	font-size: 21px;
+	line-height: 1.4;
+}
+
+.background-error h1 small {
+	font-size: 68%;
+	font-weight: 400;
+	line-height: 1;
+	color: #777;
+}
+
+.background-error footer {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	left: 0;
+	bottom: 0;
+	color: #a0a0a0;
+	font-size: 14px;
+}
+
+/* Range and indicator styles */
+.span_indicator {
+	display: block;
+	width: -webkit-fill-available;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.ownRange {
+	-webkit-appearance: none;
+	width: 100%;
+	margin: 7.3px 0;
+}
+
+.ownRange:focus {
+	outline: none;
+}
+
+.ownRange::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 11.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #b7fbfb, 0px 0px 1px #0d0d0d;
+	background: #b7fbfb;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
+
+.ownRange::-webkit-slider-thumb {
+	box-shadow: 0px 0px 3px #b7fbfb, 0px 0px 0px #1a1aff;
+	border: 3.8px solid #3f001e;
+	height: 26px;
+	width: 26px;
+	border-radius: 22px;
+	background: #5affff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -7.5px;
+}
+
+.ownRange:focus::-webkit-slider-runnable-track {
+	background: #b7fbfb;
+}
+
+.ownRange::-moz-range-track {
+	width: 100%;
+	height: 11.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #000000;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+	border-radius: 1.3px;
+}
+
+.ownRange::-moz-range-thumb {
+	box-shadow: 0px 0px 6px #0000ff, 0px 0px 0px #1a1aff;
+	border: 3.8px solid #3f001e;
+	height: 26px;
+	width: 26px;
+	border-radius: 22px;
+	background: #5affff;
+	cursor: pointer;
+}
+
+.mypagination {
+	margin: 0;
+}
+
+/*tamanho dos botoes da paginação*/
+.pagination>li>a, .pagination>li>span {
+	padding: 2px 6px;
+}
+
+.orderBtn {
+	float: right;
+}
+
+.btn-small {
+	padding: 2px 6px;
+	font-size: 12px;
+}
+
+.toolbar{
+	padding: 12px 5px;
+	background-color: rgba(158, 155, 155, 0.35);
+	height: 50px;
+}
+
+
+.ownbtn {
+	border:1px solid black;
+
+}
