@@ -1,0 +1,184 @@
+html, body, section{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.mt-1 { margin-top: 1em }
+.mt-2 { margin-top: 2em }
+.mt-3 { margin-top: 3em }
+
+.background{
+	background: linear-gradient(
+                    rgba(255,255, 255, 0.4),
+                    rgba(255, 255, 255, 0.4)
+                ),
+                url("/images/background.jpg");
+	background-size: 100% 100%;
+}
+
+.absoluteImg {
+	position: absolute;
+    width: 77%;
+    height: auto;
+    top: 15%;
+    left: 18%;	
+}
+
+.absoluteArrow {
+	top: 65%;
+	right: 9%;
+	position: absolute;
+	width: 120px;
+}
+
+.absoluteLabel {
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+#ajaxContent{
+	position: relative;
+	background-color: #389aa4;
+	border-radius: 25px;	
+	    
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	   -moz-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	 
+	min-height: 345px;
+	width: 45%;
+	
+	-webkit-justify-content: center;
+	   -moz-justify-content: center;
+	    -ms-justify-content: center;
+	        justify-content: center;
+	          -ms-flex-pack: center;
+	
+	align-items: center;
+	padding: 2em 5em;
+	margin-top: 50px;
+}
+
+#ajaxContent>*{
+	position:relative;
+	left: 0;
+}
+
+.btnChat{
+	padding:10px;
+	background-color:white;
+	position: fixed;
+	border-radius:150px;	
+	width: 90px;
+	bottom:50px	;
+	right: 50px;
+}
+
+.whiteRounded{
+	width: 80%;
+	padding:21px;
+	background-color:white;
+	border-radius:50%;	
+	width: fit-content;
+}
+
+.whiteRounded img{
+	display: block;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-left: 50px;
+	height: 250px;
+	margin-top: 25px;
+	float: left;
+	opacity: 1 !important;
+}
+
+.navbar-default {
+	position: relative;
+	height: 75px;
+	top: 30px;
+	max-width: 75%;
+	-webkit-box-shadow: 21px 8px 0px 2px rgba(255,255,255,1);
+	-moz-box-shadow: 21px 8px 0px 2px rgba(255,255,255,1);
+	box-shadow: 21px 8px 0px 2px rgba(255,255,255,1);
+}
+
+.navbar {
+	min-height: 80px;
+	background-color: #389aa4 ;
+	border: 1px #389aa4 solid;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.navbar-nav>li>a{
+	font-size: 18px;
+}
+.navbar-brand {
+	padding: 0 15px;
+	height: 80px;
+	line-height: 80px;
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar-nav {
+	height: 50px;
+	width: -webkit-fill-available;
+}
+
+.navbar-toggle {
+	/* (80px - button height 34px) / 2 = 23px */
+	margin-top: 23px;
+	padding: 9px 10px !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+	margin: 0 auto;
+}
+
+ul.nav {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+
+	
+	justify-content: space-around;
+}
+
+.nav li {
+	padding: 0;
+	margin: 0;
+}
+
+@media ( min-width : 768px) {
+	.navbar-nav>li>a {
+		/* (80px - line-height of 27px) / 2 = 26.5px */
+		padding-top: 26.5px;
+		padding-bottom: 26.5px;
+		line-height: 27px;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		height: 50px !important;
+	}
+	.navbar-default> .container-fluid{
+		height: 50px !important;
+	}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="Master">
+
+<head>
+<title>We By People</title>
+</head>
+
+<section layout:fragment="conteudo" class="background">
+	<div style="clear: both;" class="row">
+		<img alt="We by people" src="/images/Logo.png"
+			class="logo img-responsive" />
+
+		<nav class="navbar navbar-default col-sm-offset-3 ">
+			<div class="container-fluid">
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="col-sm-offset-3"><a href="QuemSomos" id="ajax">Quem
+								Somos <span class="sr-only">(current)</span>
+						</a></li>
+						<li><a href="Orgs" id="ajax">Organizações</a></li>
+						<li><a href="Plat" id="ajax">Plataforma WeByPeople</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	</div>
+	<div class="row">
+		<div id="ajaxContent">
+
+			<h2>Plataforma WeByPeople</h2>
+			<p>De acordo com o Terceiro Plano Nacional de Enfrentamento ao
+				Tráfico de Pessoas que foi publicado dia 04/07/2018 dos 6 eixos
+				temáticos apresentados, dois abordamos no desenvolvimento da
+				Plataforma WeByPeople: gestão da informação, prevenção e
+				conscientização pública</p>
+			<p class="mt-2">O sistema tem o propósito de centralizar todas os
+				dados e informações de instituições que combatem o tráfico de
+				pessoas, em um só lugar</p>
+		</div>
+
+		<img src="/images/WeByPeople.png" class="absoluteImg" /> <img
+			src="/images/arrow.png" class="absoluteArrow" />
+		<p class="absoluteLabel">
+			Saiba mais e tire<br /> dúvidas com o<br /> nosso Chat<br />
+			Inteligente
+		</p>
+
+	</div>
+	<div class="btnChat">
+		<img src="/images/btnLogo.png" class="img-responsive" />
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a#ajax").click(function() { // inclui todos os links com id="ajax"
+				console.log("aaaa");
+				$("#ajaxContent").load($(this).attr("href")); // carrega o conteúdo da página em HREF dentro da DIV #ajaxContent (id="ajaxContent")
+				return false; // remove a ação do link para navegar até a página do HREF, pois ela já foi carregada na DIV
+			});
+		});
+	</script>
+</section>
+</html>
